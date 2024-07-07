@@ -46,16 +46,17 @@ namespace Keyboard {
     /**
      * Get key pressed (keycode), call it multiple times for keys queued, returns 0 when the queue is empty
      */
-    static bool GetKeyPressed() {
+    static int GetKeyPressed() {
         return ::GetKeyPressed();
     }
 
     /**
      * Get char pressed (unicode), call it multiple times for chars queued, returns 0 when the queue is empty
      */
-    static bool GetCharPressed() {
+    static int GetCharPressed() {
         return ::GetCharPressed();
     }
+
 };
 } // namespace raylib
 
